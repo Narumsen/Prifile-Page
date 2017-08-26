@@ -3,6 +3,8 @@
   box-sizing: border-box;
 }
 
+
+
 body {
   margin: 0;
   padding: 0;
@@ -25,7 +27,7 @@ a:hover {
 
 .main-nav {
   width: 100%;
-  background: black;
+  background: #222;
   min-height: 30px;
   padding: 10px;
   position: fixed;
@@ -43,83 +45,147 @@ a:hover {
 .nav .name {
     display: block;
     margin-right: auto;
-    color: white;
+    color: #ecf0f1;
 }
 .nav li {
   padding: 5px 10px 10px 10px;
+
 }
+
 .nav a {
   transition: all .5s;
+  color: yellow;
+
 }
+
 .nav a:hover {
-  color: white
+  color: white;
+}
+
+.headers-experience {
+  padding: 10px;
+  background-color: #0399ff;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  display: table;
+  margin: 5px auto;
+}
+
+.about-cover-quotes {
+  color: white;
+  font-size: 20px;
+  background-color: #222;
+  border-radius: 10px;
+  text-align: center;
+  display: table;
+  margin: 5px auto;
+  padding: 10px;
+}
+
+.paragraph {
+  text-align: left;
+}
+
+.header-two-about {
+  color: #0399ff;
+}
+
+.underline {
+  line-height: 1.3;
 }
 
 header {
   text-align: center;
-  background: url('images/cover.jpg') no-repeat bottom center ;
-  background-size: cover;
+  background: url('images/cover.jpg');
   overflow: hidden;
   padding-top: 60px;
 }
+
 header {
   line-height: 1.5;
 }
+
 header .profile-image {
-  background-image: url("images/me.jpg");
-  margin-left: auto;
-  margin-right: auto;
-  background-size: cover;
-  background-position-x: center;
   margin-top: 50px;
   width: 150px;
   height: 150px;
-  border-radius: 10%;
-  border: 3px solid white;
+  border-radius: 60%;
+  border: 5px solid whitesmoke;
   transition: all .5s;
 }
+
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
-.tag {
-  background-color: #efefef;
-  color: black;
+
+.quote {
+  color: white;
   padding: 10px;
   border-radius: 5px;
   display: table;
-  margin: 10px auto;
+  margin: 150px auto;
+  text-align: center;
 }
+
+.tag {
+  background-color: #0399ff;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  display: table;
+  margin: 5px auto;
+
+}
+
+.name {
+  transition: all .2s;
+  color: white;
+}
+
+.name:hover {
+  transform: scale(1.1) rotate(0deg);
+}
+
 .location {
   background-color: #222;
-  color: #F3F3F0;
+  color: yellow;
 }
+
+.harvard-dorm {
+  max-width: 650px;
+}
+
+.time-at-harvard {
+  margin: 30px;
+  padding: 5px 40px 40px;
+  max-width: 850px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #f39c12;
+  border-radius: 6px;
+  transition: all .5s;
+
+}
+
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
   background: #fff;
-  border-bottom: 4px solid #ccc;
+  border-bottom: 4px solid #f39c12;
   border-radius: 6px;
   transition: all .5s;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color: #f1c40f;
 }
 
-.card-experience {
-  margin: 30px;
-  padding: 20px 40px 40px;
-  max-width: 100%;
-  text-align: left;
-  background: #fff;
-  border-bottom: 4px solid #ccc;
-  border-radius: 6px;
-  transition: all .5s;
+.profile-picture {
+  max-width: 450px;
 }
-.card-experience:hover {
-  border-color: #A3FF99;
-}
+
 ul.skills {
   padding: 0;
   text-align: center;
@@ -172,11 +238,11 @@ a.social {
 a.twitter {
   background-image: url(images/twitter.svg);
 }
-a.linkedin {
-  background-image: url(images/linkedin.svg);
+a.facebook {
+  background-image: url(images/facebook.svg);
 }
-a.github {
-  background-image: url(images/github.svg);
+a.instagram {
+  background-image: url(images/instagram.svg);
 }
 a.social:hover {
   opacity: 1;
@@ -184,11 +250,6 @@ a.social:hover {
 .clearfix {
   clear: both;
 }
-
-.centered {
-  text-align: center;
-}
-
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
