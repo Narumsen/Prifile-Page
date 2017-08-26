@@ -3,13 +3,11 @@
   box-sizing: border-box;
 }
 
-
-
 body {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #222;
   background: #f7f5f0;
 }
@@ -17,7 +15,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #999;
+  color: #fff;
 }
 a:hover {
   color: #6633ff;
@@ -27,7 +25,7 @@ a:hover {
 
 .main-nav {
   width: 100%;
-  background: #222;
+  background: #f05858;
   min-height: 30px;
   padding: 10px;
   position: fixed;
@@ -45,145 +43,67 @@ a:hover {
 .nav .name {
     display: block;
     margin-right: auto;
-    color: #ecf0f1;
+    color: white;
 }
 .nav li {
   padding: 5px 10px 10px 10px;
-
 }
-
 .nav a {
   transition: all .5s;
-  color: yellow;
-
 }
-
 .nav a:hover {
-  color: white;
-}
-
-.headers-experience {
-  padding: 10px;
-  background-color: #0399ff;
-  border-radius: 10px;
-  color: white;
-  text-align: center;
-  display: table;
-  margin: 5px auto;
-}
-
-.about-cover-quotes {
-  color: white;
-  font-size: 20px;
-  background-color: #222;
-  border-radius: 10px;
-  text-align: center;
-  display: table;
-  margin: 5px auto;
-  padding: 10px;
-}
-
-.paragraph {
-  text-align: left;
-}
-
-.header-two-about {
-  color: #0399ff;
-}
-
-.underline {
-  line-height: 1.3;
+  color: #b8b8b8;
 }
 
 header {
   text-align: center;
-  background: url('images/cover.jpg');
+  background: url('images/lisbon.jpg') no-repeat top center ;
+  background-size: cover;
   overflow: hidden;
   padding-top: 60px;
 }
-
 header {
   line-height: 1.5;
 }
-
 header .profile-image {
   margin-top: 50px;
   width: 150px;
   height: 150px;
-  border-radius: 60%;
-  border: 5px solid whitesmoke;
+  border-radius: 15%;
+  border: 5px solid #f05858;
   transition: all .5s;
 }
-
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
-
-.quote {
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-  display: table;
-  margin: 150px auto;
-  text-align: center;
-}
-
 .tag {
-  background-color: #0399ff;
-  color: white;
+  color: #FFFFFF;
   padding: 10px;
-  border-radius: 5px;
   display: table;
-  margin: 5px auto;
-
+  margin: 10px auto;
+  background: #f05858;
+  border: 3px solid #f05858;
 }
 
 .name {
-  transition: all .2s;
-  color: white;
-}
-
-.name:hover {
-  transform: scale(1.1) rotate(0deg);
+  color: #FFFFFF;
 }
 
 .location {
-  background-color: #222;
-  color: yellow;
+  border: 3px solid #f05858;
 }
-
-.harvard-dorm {
-  max-width: 650px;
-}
-
-.time-at-harvard {
-  margin: 30px;
-  padding: 5px 40px 40px;
-  max-width: 850px;
-  text-align: left;
-  background: #fff;
-  border-bottom: 4px solid #f39c12;
-  border-radius: 6px;
-  transition: all .5s;
-
-}
-
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
-  text-align: left;
+  text-align: justify;
   background: #fff;
-  border-bottom: 4px solid #f39c12;
+  border-bottom: 4px solid #ccc;
   border-radius: 6px;
   transition: all .5s;
 }
 .card:hover {
-  border-color: #f1c40f;
-}
-
-.profile-picture {
-  max-width: 450px;
+  border-color: #f05858;
 }
 
 ul.skills {
@@ -235,15 +155,15 @@ a.social {
   opacity: .4;
   transition: all .5s;
 }
+
 a.twitter {
   background-image: url(images/twitter.svg);
 }
-a.facebook {
-  background-image: url(images/facebook.svg);
+
+a.github {
+  background-image: url(images/github.svg);
 }
-a.instagram {
-  background-image: url(images/instagram.svg);
-}
+
 a.social:hover {
   opacity: 1;
 }
@@ -251,7 +171,58 @@ a.social:hover {
   clear: both;
 }
 
+/* PAGE: EXPERIENCE */
+
+.other li {
+  font-size: 1.2em;
+  line-height: 60px;
+}
+
+/* PAGE: CONTACT */
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info a {
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  padding: 5px 0 0 40px;
+  margin: 0 0 10px;
+  color: #000;
+}
+
+.contact-info a:hover {
+  color: #b8b8b8;
+}
+
+.contact-info li.email a {
+  background-image: url('images/mail.png');
+}
+
+.contact-info li.twitter a {
+  background-image: url('images/twitter.png');
+}
+
+li img {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-photo {
+  margin: 30px 0 0 0;
+  max-width: 40%;
+  border-radius: 15%;
+  border: 3px solid #f05858;
+}
+
+
 /* Styles for larger screens */
+
 @media screen and (min-width: 720px) {
 
   .flex {
@@ -285,6 +256,11 @@ a.social:hover {
     font-size: 1.3em;
     max-width: 1200px;
     margin: 40px auto;
+  }
+
+  .contact-photo {
+    float: left;
+    margin: 30px 20px 0;
   }
 
 }
